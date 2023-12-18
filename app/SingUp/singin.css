@@ -1,0 +1,57 @@
+
+form{
+	background-color:#162b4e;
+	border-radius:7%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	
+	width:40vh;
+	height:25vh;
+    
+    margin-top:4vw;
+}
+
+h1{
+	color:white;
+}
+
+#nombre{
+	width:35vh;
+}
+
+#apellido{
+	margin-top:1vh;
+	width:35vh;
+}
+
+#correo{
+	width:35vh;
+	margin-top:1vh;
+}
+
+#contrasena{
+	width:35vh;
+}
+
+textarea{
+	margin-top:2vh;
+}
+
+div{
+	margin-top:2vh;
+	color:white;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+
+#registrar{
+	margin-top:1vh;
+	width:35vh;
+}
+
+#borrar{
+	margin-top:1vh;
+	width:35vh;
+}
