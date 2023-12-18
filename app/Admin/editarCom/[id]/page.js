@@ -10,7 +10,6 @@ const EditarComercio = () => {
   const [telefono, setTelefono] = useState('');
 
   const [comercioOg, setComercioOg] = useState({}); 
-  const [isLoading, setIsLoading] = useState(true);
 
   const params = useParams();
   const id = params.id;
@@ -18,7 +17,6 @@ const EditarComercio = () => {
   useEffect(() => {
     const cargarComercio = async () => {
       if (!id) return;
-      setIsLoading(true);
       try {
         const response = await fetch(`/api/comercios/${id}`);
         if (!response.ok) {
@@ -32,8 +30,6 @@ const EditarComercio = () => {
         setComercioOg(data[0]); 
       } catch (error) {
         console.error('Error:', error);
-      } finally {
-        setIsLoading(false);
       }
     };
     cargarComercio();
@@ -72,9 +68,6 @@ const EditarComercio = () => {
     }
   };
 
-  if (isLoading) {
-    return <div>Cargando...</div>;
-  }
 
   return (
     <div className="container">
