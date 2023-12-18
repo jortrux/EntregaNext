@@ -1,2 +1,7 @@
 # EntregaNext
-Ojala hubiese tenido mas tiempo, pero he creado un caos terrible
+ 
+ Falta:
+ 
+ - Modificación de datos y textos/imágenes para su página web.
+ - Modificación de sus datos o baja
+ - Introducir reseña y puntuación para las páginas web de los comercios
